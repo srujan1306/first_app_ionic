@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { LoaderComponent } from './loader/loader.component';
 import { HomePage } from './home/home.page';
+import { TabsComponent } from './tabs/tabs.component';
 
 export const routes: Routes = [
   {
@@ -10,6 +11,10 @@ export const routes: Routes = [
   {
     path: 'loader',
     component: LoaderComponent,
+  },
+  {
+    path: 'tabs',
+    component: TabsComponent,
   },
   {
     path: 'login',
@@ -28,6 +33,7 @@ export const routes: Routes = [
   },
   {
     path: 'register',
-    loadComponent: () => import('./pages/register/register.page').then( m => m.RegisterPage)
+    loadComponent: () =>
+      import('./pages/register/register.page').then((m) => m.RegisterPage),
   },
 ];
