@@ -1,13 +1,55 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>register</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">register</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="flex_center">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title color="success">Books store</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item>
+          <ion-input
+            type="text"
+            label="First Name"
+            labelPlacement="floating"
+            placeholder="Enter your first name"
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input
+            type="text"
+            label="Last Name"
+            labelPlacement="floating"
+            placeholder="Enter your last name"
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input
+            type="email"
+            label="Email Address"
+            labelPlacement="floating"
+            placeholder="Enter your Email Address"
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input
+            type="password"
+            label="Password"
+            labelPlacement="floating"
+            placeholder="Enter your password"
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input
+            type="text"
+            label="City"
+            labelPlacement="floating"
+            placeholder="Enter your city"
+          ></ion-input>
+        </ion-item>
+        <ion-button color="success" size="full" shape="round"
+          >Register
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
